@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="http://localhost:8080/pay" method="post">
+        <table>
+            <tr>
+                <td>订单标题:</td>
+                <td><input type="text" name="subject"></td>
+            </tr>
+            <tr>
+                <td>订单描述:</td>
+                <td><input type="text" name="body"></td>
+            </tr>
+            <tr>
+                <td>商品编号:</td>
+                <td><input type="text" name="goodsId"></td>
+            </tr>
+            <tr>
+                <td>商品名称:</td>
+                <td><input type="text" name="goodsName"></td>
+            </tr>
+            <tr>
+                <td>商品数量:</td>
+                <td><input type="text" name="quantity"></td>
+            </tr>
+            <tr>
+                <td>商品单价:</td>
+                <td><input type="text" name="price"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="提交"></td>
+            </tr>
+        </table>
+    </form>
+
+<!--    <form name="punchout_form" method="post" action="https://openapi.alipay.com/gateway.do?charset=UTF-8&method=alipay.trade.page.pay&sign=GhX1nZjzHeF4AhrRuudPXp4AZV4KsU%2FRy08fEPS52AP4Gbyr8ay%2F%2FRg21ky4AS5ZfU0Fd3Q7%2FuJNXlCFfJe4%2Fyf1vsbGVjmzyp7bh%2BBDhORkdVCRkp9WdLw2wes1Di0A8wTONUpKwyQ9mwm5NR1vUbzOvsbH0qxfPwgNgncw95hx9nCccoww7uYSNpjFMfT1jB0LH2etNkHxne2zoS5aG9KV4w1hC1cX%2FOq9nN3KQ%2BJAh1hClMqT0%2FjsnEz1zznN8YoU0XzLFtOuAADG%2Bdmyy5EiQ8x2Cb2xPvXly3mW5s5ptB8bTSGAfRuCU0Jm98agYN4yGXoKadQDmuYfa%2BP3qw%3D%3D&return_url=http%3A%2F%2F127.0.0.1%3A8080%2FCallBack%2Findex.html&version=1.0&app_id=2016092500593977&sign_type=RSA2&timestamp=2020-09-09+13%3A52%3A29&alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json">-->
+<!--        <input type="hidden" name="biz_content" value="{&quot;goods_name&quot;:&quot;1&quot;,&quot;out_trade_no&quot;:&quot;a23960cb-97f9-4816-9ea3-9354090baa28&quot;,&quot;quantity&quot;:&quot;1&quot;,&quot;total_amount&quot;:&quot;1.0&quot;,&quot;subject&quot;:&quot;1&quot;,&quot;price&quot;:&quot;1.0&quot;,&quot;goods_id&quot;:&quot;1&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;,&quot;body&quot;:&quot;1&quot;}">-->
+<!--        <input type="submit" value="立即支付" style="display:none" >-->
+<!--    </form>-->
+<!--    <script>document.forms[0].submit();</script>-->
+</body>
+</html>
